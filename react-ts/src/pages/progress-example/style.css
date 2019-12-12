@@ -1,0 +1,23 @@
+.button-wrapper {
+  margin-top: 20px; }
+  .button-wrapper > button {
+    padding: 5px;
+    background: #fff;
+    margin-right: 10px;
+    color: #000; }
+
+.circle-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .circle-wrapper > div {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    margin-left: 20px; }
+    .circle-wrapper > div > button {
+      margin-bottom: 10px; }
+
+.line-progress {
+  width: 600px;
+  margin-bottom: 20px; }

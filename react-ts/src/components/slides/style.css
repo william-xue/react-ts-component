@@ -1,0 +1,51 @@
+.z-slides {
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+  .z-slides .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+  .z-slides .z-dot {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    .z-slides .z-dot:last-child {
+      margin-right: 0; }
+    .z-slides .z-dot .z-dot-item {
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      border-radius: 50%;
+      margin-right: 4px;
+      transition: all 300ms linear; }
+      .z-slides .z-dot .z-dot-item.active {
+        border-radius: 2px;
+        width: 10px;
+        height: 10px; }
+  .z-slides .z-control {
+    position: absolute;
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer; }
+    .z-slides .z-control:hover {
+      background: rgba(255, 255, 255, 0.6); }
+      .z-slides .z-control:hover .icon {
+        color: rgba(0, 0, 0, 0.6); }
+    .z-slides .z-control .icon {
+      color: rgba(255, 255, 255, 0.6);
+      width: 20px;
+      height: 20px; }
+    .z-slides .z-control.z-prev {
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+    .z-slides .z-control.z-next {
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%); }

@@ -1,0 +1,78 @@
+.z-slides {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .container {
+    width: 100%;
+    display: flex;
+
+    flex-direction: row;
+
+  }
+
+  .z-dot {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .z-dot-item {
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      border-radius: 50%;
+      margin-right: 4px;
+      transition: all 300ms linear;
+
+      &.active {
+        // background: #03A0E9;
+        border-radius: 2px;
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+
+  .z-control {
+    position: absolute;
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.6);
+
+      .icon {
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    .icon {
+      color: rgba(255, 255, 255, 0.6);
+
+      width: 20px;
+      height: 20px;
+    }
+
+    &.z-prev {
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &.z-next {
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.z-layout {
+  display: flex; }
+  .z-layout.horizontal {
+    flex-direction: row; }
+  .z-layout.vertical {
+    flex-direction: column; }
+  .z-layout > .z-layout {
+    flex-grow: 1; }
+
+.z-header {
+  flex-grow: 0;
+  flex-shrink: 0; }
+
+.z-footer {
+  flex-grow: 0;
+  flex-shrink: 0; }
+
+.z-main {
+  flex-grow: 1;
+  flex-shrink: 0; }

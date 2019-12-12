@@ -1,0 +1,61 @@
+.z-progress {
+  .z-progress-container {
+    display: flex;
+    align-items: center;
+
+    .z-progress-outer {
+
+      flex: 1;
+
+      .z-progress-inner {
+        background: #f5f5f5;
+
+        animation: progress 500ms;
+
+        .z-progress-content {
+          transition: width 300ms ease-in-out;
+        }
+      }
+
+    }
+
+    .z-progress-info {
+      width: 4em;
+      font-size: 14px;
+      margin-left: 12px;
+      line-height: 1;
+      color: #333333;
+    }
+
+  }
+
+  .z-circle {
+    position: relative;
+
+    .z-progress-circle-info {
+      color: #333333;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 0.1
+  }
+
+  20% {
+    width: 0;
+    opacity: 0.5;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}

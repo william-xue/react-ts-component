@@ -1,0 +1,30 @@
+.z-layout {
+  display: flex;
+
+  &.horizontal {
+    flex-direction: row;
+  }
+
+  &.vertical {
+    flex-direction: column;
+  }
+
+  &>& {
+    flex-grow: 1;
+  }
+}
+
+.z-header {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.z-footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.z-main {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
